@@ -37,9 +37,9 @@ phases:
   build:
     # run-as: Linux-user-name
     commands:
-      - vagrant ssh
-      - cd /vagrant/artoo
-      - tup
+      - ./install-vagrant-deps.sh
+      - cd ./artoo
+      - ./tup
     # finally:
     #   - command
     #   - command
