@@ -22,7 +22,7 @@ phases:
       ruby: 2.6
       python: 3.7
     commands:
-      - vagrant up
+      - ./install-vagrant-deps.sh
     # finally:
     #   - command
     #   - command
@@ -37,7 +37,6 @@ phases:
   build:
     # run-as: Linux-user-name
     commands:
-      - ./install-vagrant-deps.sh
       - cd ./artoo
       - ./tup
     # finally:
